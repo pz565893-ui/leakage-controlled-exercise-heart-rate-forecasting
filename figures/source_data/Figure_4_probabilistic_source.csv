@@ -1,0 +1,10 @@
+model_version,regime,mode,horizon_seconds,calibrated,pinball_loss,weighted_interval_score,normalized_90_interval_width,mean_user_spearman_width_absolute_error,users_with_defined_spearman,users,sessions,origins,display_regime,seed_scope
+0.13.0,within_user_temporal_test,history_informed,60,True,1.784823298454285,3.568715810775757,0.1807693094015121,0.3272579726300613,938,948,16012,104144,Temporal · history-informed,reference seed 20260722
+0.13.0,within_user_temporal_test,history_informed,180,True,2.249525308609009,4.498480796813965,0.2231761366128921,0.2849536399127118,938,948,16012,104144,Temporal · history-informed,reference seed 20260722
+0.13.0,within_user_temporal_test,history_informed,300,True,2.4563379287719727,4.912261962890625,0.2420550435781479,0.2633051366527161,938,948,16012,104144,Temporal · history-informed,reference seed 20260722
+0.11.0,unseen_user_test,zero_history,60,True,1.7426977157592771,3.4852969646453857,0.1682332009077072,0.362011452291807,104,105,15026,101184,Unseen user · history-masked,reference seed 20260722
+0.11.0,unseen_user_test,zero_history,180,True,2.231893539428711,4.463787078857422,0.210025355219841,0.3339689136834524,104,105,15026,101184,Unseen user · history-masked,reference seed 20260722
+0.11.0,unseen_user_test,zero_history,300,True,2.4939498901367188,4.9878997802734375,0.2288117557764053,0.2948438803919777,104,105,15026,101184,Unseen user · history-masked,reference seed 20260722
+0.11.0,goldencheetah_frozen_external,zero_history,60,True,2.239829540252685,4.479460716247559,0.2251222878694534,0.3612548475224236,144,144,31851,531725,Cross-source · history-masked,reference seed 20260722
+0.11.0,goldencheetah_frozen_external,zero_history,180,True,3.0485165119171143,6.0970330238342285,0.2827793657779693,0.3145264999316218,144,144,31851,531725,Cross-source · history-masked,reference seed 20260722
+0.11.0,goldencheetah_frozen_external,zero_history,300,True,3.361403465270996,6.722806453704834,0.3055353164672851,0.2719169429330461,144,144,31851,531725,Cross-source · history-masked,reference seed 20260722
