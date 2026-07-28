@@ -44,7 +44,7 @@ DEFAULT_ALLOW_RULES = (
             "README.md",
             "REPRODUCING.md",
             "ENVIRONMENT.md",
-            "LICENSE_DECISION_REQUIRED.md",
+            "LICENSE",
             "requirements-lock.txt",
             "PUBLIC_RELEASE_MANIFEST.md",
             "REPOSITORY_UPLOAD_GUIDE.md",
