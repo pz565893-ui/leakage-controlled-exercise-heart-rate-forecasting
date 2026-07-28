@@ -1,0 +1,5 @@
+Leakage-controlled splits separate temporal, user, sport, and source shifts.
+Completed history yields small point-estimate gains over zero-history training.
+Five held-sport families show heterogeneous errors and sparse joint-shift groups.
+Matched cross-source tests show longer-horizon interval undercoverage.
+Sport-composition standardization attenuates point and interval-score gaps.

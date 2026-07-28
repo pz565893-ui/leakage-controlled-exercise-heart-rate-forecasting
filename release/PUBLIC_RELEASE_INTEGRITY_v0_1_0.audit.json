@@ -1,0 +1,28 @@
+{
+  "manifest_version": "0.1.0",
+  "generated_at_utc": "2026-07-28T07:33:21.005545+00:00",
+  "status": "PASS",
+  "manifest_file": "release/PUBLIC_RELEASE_INTEGRITY_v0_1_0.csv",
+  "manifest_sha256": "41f5181b5ef59cb9bfcbd3d573078ec60e8fd6dd92ce31b05a78ea5c3666a399",
+  "file_count": 256,
+  "total_size_bytes": 8782211,
+  "category_counts": {
+    "release_metadata": 10,
+    "configuration": 1,
+    "figures": 29,
+    "manuscript_targets": 3,
+    "validated_audits": 6,
+    "aggregate_results": 59,
+    "protocol": 23,
+    "references": 5,
+    "analysis_code": 78,
+    "tests": 42
+  },
+  "safety_policy": {
+    "selection": "explicit default allowlist",
+    "paths": "repository-relative only; symlinks and local absolute paths rejected",
+    "tabular_guard": "direct identifiers, exact participant times, geolocation, and source paths rejected",
+    "minimum_group_support": "reported user subgroups must have k >= 10",
+    "blocked_artifacts": "raw, row-level, model-array, origin, prediction, manifest, and checkpoint locations excluded by default"
+  }
+}

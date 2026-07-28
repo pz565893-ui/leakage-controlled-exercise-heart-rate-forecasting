@@ -1,0 +1,128 @@
+project:
+  name: leakage_controlled_hr_forecasting
+  seed: 20260722
+  ontology_version: 0.2.0-adjudicated-rules
+  split_version: 0.2.0
+  window_index_version: 0.3.1
+  feature_series_version: 0.4.0
+  naive_baseline_version: 0.5.0
+  model_array_version: 0.6.0
+  tabular_feature_version: 0.7.0
+  xgboost_baseline_version: 0.8.0
+  neural_baseline_version: 0.9.0
+  causal_history_version: 0.10.1
+  uncertainty_model_version: 0.11.0
+  sport_shift_model_version: 0.12.0
+  strict_temporal_protocol_version: 0.13.0
+  signal_ablation_version: 0.14.0
+  dense_origin_sensitivity_version: 0.15.0
+  recorded_gender_subgroup_version: 0.16.0
+
+data:
+  endomondo_hr: ../endomondoHR.json/endomondoHR.json
+  endomondo_meta: ../endomondoMeta.json/endomondoMeta.json
+  goldencheetah_root: ../GoldenCheetah_extracted
+
+task:
+  context_seconds: 300
+  horizons_seconds: [60, 180, 300]
+  primary_grid_seconds: 10
+  origin_stride_seconds: 60
+  primary_evaluation_stride_seconds: 300
+  sensitivity_grid_seconds: [5, 30]
+  valid_hr_bpm: [30, 240]
+  provisional_min_hr_coverage: 0.80
+  session_duration_seconds: [600, 86400]
+  provisional_max_gap_seconds: 60
+  target_interpolation_max_span_seconds: 30
+
+baselines:
+  evaluation_origin_stride_seconds: 300
+  ewma_candidate_alphas: [0.1, 0.2, 0.3, 0.5, 0.7, 0.9]
+  ewma_selection_partition: unseen_user_validation
+  ewma_selection_metric: mean_1_3_5_min_user_session_hierarchical_mae
+  linear_trend_output_clip_bpm: [30, 240]
+  xgboost:
+    residual_target: true
+    n_estimators: 2000
+    learning_rate: 0.03
+    max_depth: 8
+    early_stopping_rounds: 100
+    hierarchical_training_weights: true
+  neural:
+    models: [gru, tcn, transformer]
+    residual_target: true
+    hidden_size: 64
+    batch_size: 2048
+    epoch_samples: 1000000
+    max_epochs: 20
+    early_stopping_patience: 4
+    learning_rate: 0.001
+    hierarchical_sampling: true
+
+main_model:
+  encoder: tcn
+  history_features: 13
+  history_dropout: 0.20
+  quantiles: [0.05, 0.10, 0.25, 0.50, 0.75, 0.90, 0.95]
+  selection_metric: mean_history_and_zero_history_user_session_hierarchical_mae
+  conformal_intervals: [0.50, 0.80, 0.90]
+  conformal_rule: finite_sample_higher_quantile_nonnegative_expansion
+
+sport_shift_models:
+  held_out_families: [outdoor_cycling, indoor_virtual_cycling, running, walking_hiking, strength_cross_training]
+  training_users: unseen_user_train_partition
+  validation_users: unseen_user_validation_partition
+  calibration_users: unseen_user_calibration_partition
+  held_family_token: unknown
+  sport_token_dropout: 0.10
+  epoch_samples: 250000
+  max_epochs: 40
+  early_stopping_patience: 3
+
+strict_temporal_model:
+  epoch_samples: 500000
+  max_epochs: 40
+  early_stopping_patience: 4
+  selection_metric: mean_history_and_zero_history_user_session_hierarchical_mae
+
+signal_ablation:
+  comparison: multimodal_vs_heart_rate_only_signal
+  retained_context: [sport_family, elapsed_time, causal_user_history]
+  masked_channels: [speed_value, altitude_value, speed_mask, altitude_mask]
+  max_epochs: 40
+  early_stopping_patience: 4
+
+support_thresholds:
+  internal_sport_shift:
+    min_users: 50
+    min_sessions: 1000
+  primary_external_family:
+    min_users: 20
+    min_sessions: 500
+
+duplicate_control:
+  signal_fingerprint_fields: [timestamp, heart_rate, speed, altitude, latitude, longitude]
+  cross_user_group: exclude_all
+  conflicting_sport_family_group: exclude_all
+  within_user_family_consistent_group: keep_one_deterministic_canonical
+
+sport_families:
+  - outdoor_cycling
+  - indoor_virtual_cycling
+  - running
+  - walking_hiking
+  - swimming
+  - skiing
+  - strength_cross_training
+  - other_unknown
+
+quantiles: [0.05, 0.10, 0.25, 0.50, 0.75, 0.90, 0.95]
+
+evaluation_protocols:
+  - within_user_temporal
+  - unseen_user_zero_shot
+  - unseen_user_history_informed
+  - unseen_sport_family
+  - joint_user_sport_shift
+  - frozen_external_validation
