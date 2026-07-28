@@ -29,10 +29,9 @@ and upload the extracted directory contents rather than committing the ZIP file.
 
 ## Author actions before public release
 
-1. Add the final `repository-code` URL to `CITATION.cff`.
-2. Select an institutionally approved software licence and add `LICENSE`.
-3. Create a tagged release and archive that exact tag in Zenodo or another
+1. Verify the final `repository-code` URL and MIT licence metadata in `CITATION.cff`.
+2. Create a tagged release and archive that exact tag in Zenodo or another
    repository that provides a persistent DOI.
-4. Insert the final repository URL and DOI into the manuscript's Code
+3. Insert the final repository URL and DOI into the manuscript's Code
    availability and Data availability sections.
-5. Regenerate and verify the integrity manifest from the tagged commit.
+4. Regenerate and verify the integrity manifest from the tagged commit.

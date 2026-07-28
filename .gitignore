@@ -1,0 +1,56 @@
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Local environments and machine-specific files
+.venv/
+hrf_env/
+.idea/
+.vscode/
+*.tmp
+*.log
+
+# Raw data must remain outside the public repository
+data/raw/
+endomondoHR.json/
+endomondoMeta.json/
+GoldenCheetah_extracted/
+*.fit
+*.tcx
+*.gpx
+*.npy
+*.npz
+*.parquet
+*.pt
+*.sqlite
+
+# Row-level, identifier-bearing, or very large generated intermediates
+outputs/manifests/
+outputs/origins/
+outputs/features/
+outputs/predictions/
+outputs/models/
+outputs/docx_render/
+outputs/docx_render_word/
+
+# Superseded/pilot aggregate artifacts are not part of the public authority set
+outputs/results/pilot*.csv
+outputs/results/paired_user_bootstrap_v0_11_0.csv
+outputs/results/sport_shift_*_point_v0_12_0.csv
+outputs/results/sport_shift_*_interval_v0_12_0.csv
+
+# Audit outputs are denied by default; only explicit non-identifying reports are allowed
+outputs/audit/**
+!outputs/audit/
+!outputs/audit/FINAL_RESULTS_VALIDATION.md
+!outputs/audit/REPORTED_NUMBER_VALIDATION.json
+!outputs/audit/MANUSCRIPT_PACKAGE_VALIDATION.json
+!outputs/audit/REPRODUCIBILITY_RELEASE_AUDIT.md
+
+# Office and operating-system temporary files
+~$*.docx
+Thumbs.db
+.DS_Store

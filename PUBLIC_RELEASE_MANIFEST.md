@@ -1,7 +1,7 @@
 # Public release manifest policy
 
 **Policy version:** 0.1.0  
-**Status:** pre-release specification; author and institutional decisions remain open
+**Status:** pre-release specification; MIT software licence selected, persistent DOI pending
 
 This document defines the default public-release boundary for the *Physiological Measurement* submission package. It is intentionally conservative: release files are selected through an explicit allowlist, while raw and row-level artifacts are excluded even if they are present in the working directory.
 
@@ -23,7 +23,7 @@ The CSV is deterministic for unchanged inputs. It never writes local absolute pa
 
 Only the following classes are selected by default:
 
-- release metadata: `.gitignore`, `README.md`, `REPRODUCING.md`, `DATA_SOURCES.md`, `ENVIRONMENT.md`, `requirements-lock.txt`, `CITATION.cff`, `LICENSE_DECISION_REQUIRED.md`, `REPOSITORY_UPLOAD_GUIDE.md`, and this policy;
+- release metadata: `.gitignore`, `README.md`, `REPRODUCING.md`, `DATA_SOURCES.md`, `ENVIRONMENT.md`, `requirements-lock.txt`, `CITATION.cff`, `LICENSE`, `REPOSITORY_UPLOAD_GUIDE.md`, and this policy;
 - repository-local analysis code under `src/*.py`;
 - unit tests under `tests/*.py`;
 - `configs/study.yaml`; the full raw-label ontology is deliberately excluded, while its deterministic mapping rules remain in the released analysis code;
@@ -69,11 +69,10 @@ Stable public-platform IDs remain linkable pseudonyms. They are treated as non-r
 
 The following fields are deliberately unresolved and must not be inferred by the code:
 
-1. **Software licence:** `[AUTHOR/INSTITUTION DECISION REQUIRED]`. No `LICENSE` file is created by this policy.
-2. **Repository URL and archived DOI:** `[AUTHOR DECISION REQUIRED]`.
-3. **Checkpoint release:** `[AUTHOR/INSTITUTION AND DATA-TERMS REVIEW REQUIRED]`.
-4. **Licence/rights for newly generated aggregate tables and figures:** `[AUTHOR/INSTITUTION DECISION REQUIRED]`.
-5. **Third-party data terms:** FitRec/Endomondo is limited by its source page to academic, non-commercial use without redistribution. GoldenCheetah is currently labelled CC0 by OSF, but its raw records are still not mirrored under this privacy-conservative project policy. Neither source is relicensed by this project.
+1. **Software licence:** resolved as MIT for the deposited software and associated documentation.
+2. **Repository URL:** `https://github.com/pz565893-ui/leakage-controlled-exercise-heart-rate-forecasting`; archived DOI remains pending.
+3. **Checkpoint release:** excluded from the default public repository and not required for this release.
+4. **Third-party data terms:** FitRec/Endomondo is limited by its source page to academic, non-commercial use without redistribution. GoldenCheetah is currently labelled CC0 by OSF, but its raw records are still not mirrored under this privacy-conservative project policy. Neither source is relicensed by this project.
 
 After these decisions, regenerate and verify the integrity manifest from the exact tagged commit, then rebuild the upload bundle with `python src/build_public_repository_package.py`. The repository landing page should record creators, title, version, publication year, resource type, description, licence/rights, related dataset identifiers, and the related manuscript identifier when available.
 
