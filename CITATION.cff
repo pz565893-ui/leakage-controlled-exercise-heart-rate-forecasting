@@ -3,7 +3,8 @@ message: "If you use this software, please cite the archived release and the ass
 title: "Leakage-Controlled Exercise Heart-Rate Forecasting"
 type: software
 version: 0.30.0
-date-released: 2026-07-28
+date-released: 2026-07-28 
+repository-code: "https://github.com/pz565893-ui/leakage-controlled-exercise-heart-rate-forecasting"
 authors:
   - family-names: Pang
     given-names: Keren
