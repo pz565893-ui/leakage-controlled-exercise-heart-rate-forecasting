@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived release and the associated article."
+title: "Leakage-Controlled Exercise Heart-Rate Forecasting"
+type: software
+version: 0.30.0
+date-released: 2026-07-28
+authors:
+  - family-names: Pang
+    given-names: Keren
+    orcid: "https://orcid.org/0009-0007-2506-9206"
+    affiliation: "Department of Sports & Health Science, Shinhan University"
+  - family-names: Min
+    given-names: Changrong
+    affiliation: "Criminal Investigation Police University of China"
+abstract: >-
+  Reproducible code, configurations, aggregate results, figure source data,
+  and audit utilities for leakage-controlled exercise heart-rate forecasting
+  across temporal, unseen-user, sport-family, joint, and cross-source shifts.
+keywords:
+  - heart-rate forecasting
+  - wearable sensors
+  - distribution shift
+  - conformal prediction
+  - data leakage
