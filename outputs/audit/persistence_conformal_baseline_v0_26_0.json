@@ -1,0 +1,60 @@
+{
+  "generated_at_utc": "2026-07-23T13:25:39.819700+00:00",
+  "analysis_version": "0.26.0",
+  "method": "Deterministic persistence point forecast with origin-pooled finite-sample symmetric split-conformal absolute-residual radii; intervals clipped to 30--240 bpm.",
+  "radii": {
+    "strict_temporal": {
+      "60": {
+        "0.5": 3.888885498046875,
+        "0.8": 10.333328247070312,
+        "0.9": 16.75
+      },
+      "180": {
+        "0.5": 5.0,
+        "0.8": 13.625,
+        "0.9": 21.300003051757812
+      },
+      "300": {
+        "0.5": 5.615386962890625,
+        "0.8": 14.75,
+        "0.9": 22.75
+      }
+    },
+    "unseen_user": {
+      "60": {
+        "0.5": 3.6666641235351562,
+        "0.8": 9.428573608398438,
+        "0.9": 15.0
+      },
+      "180": {
+        "0.5": 5.0,
+        "0.8": 12.5,
+        "0.9": 19.75
+      },
+      "300": {
+        "0.5": 5.1999969482421875,
+        "0.8": 13.5,
+        "0.9": 21.0
+      }
+    }
+  },
+  "calibration_rows": {
+    "strict_temporal": 99151,
+    "unseen_user": 85247
+  },
+  "evaluation_rows": {
+    "strict_temporal_test": 104144,
+    "unseen_user_test": 101184,
+    "goldencheetah_frozen_external": 531725
+  },
+  "strict_calibration_test_session_overlap": 0,
+  "unseen_calibration_test_user_overlap": 0,
+  "external_calibration_rows": 0,
+  "goldencheetah_used_for_calibration": false,
+  "threshold_monotonic_failures": 0,
+  "nonfinite_metric_values": 0,
+  "coverage_range_failures": 0,
+  "metric_rows": 9,
+  "output": "outputs/results/persistence_conformal_baseline_v0_26_0.csv",
+  "all_assertions_pass": true
+}

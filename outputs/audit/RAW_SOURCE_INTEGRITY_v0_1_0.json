@@ -1,0 +1,53 @@
+{
+  "audit_duration_seconds": 942.654492,
+  "audit_type": "raw_source_integrity",
+  "audit_version": "0.1.0",
+  "generated_at_utc": "2026-07-22T10:43:31.025415+00:00",
+  "hashing": {
+    "file_sha256": "SHA-256 of raw file bytes",
+    "recursive_set_sha256": "SHA-256 of lexicographically sorted raw per-file SHA-256 digests; duplicate file contents are retained",
+    "recursive_symlink_policy": "reject symlinks and reparse points",
+    "tree_sha256": "SHA-256 over records sorted by NFC-normalized POSIX relative path then file SHA-256; record encoding is uint64_be(path_utf8_length) || path_utf8 || raw_file_sha256"
+  },
+  "privacy": {
+    "absolute_paths_written": false,
+    "source_file_manifest_written": false,
+    "source_file_names_written": false,
+    "user_identifiers_written": false
+  },
+  "read_only_inputs": true,
+  "sources": {
+    "endomondo_hr_json": {
+      "bytes": 6568384411,
+      "duration_seconds": 4.979897,
+      "extension_counts": {
+        ".json": 1
+      },
+      "file_count": 1,
+      "sha256": "1c021e3f8cb6428aefcb14ceff9d58ab2b6b2163bcbedfca71cb9f55616836e5",
+      "source_kind": "single_file"
+    },
+    "endomondo_metadata_json": {
+      "bytes": 10620961796,
+      "duration_seconds": 8.305119,
+      "extension_counts": {
+        ".json": 1
+      },
+      "file_count": 1,
+      "sha256": "90461964a32557bea0ade6f5c9f46714a83606e88e22bde4cd7430a120031410",
+      "source_kind": "single_file"
+    },
+    "goldencheetah_extracted": {
+      "bytes": 7644587363,
+      "duration_seconds": 929.326829,
+      "extension_counts": {
+        ".csv": 51470,
+        ".json": 150
+      },
+      "file_count": 51620,
+      "sha256": "10db1f7f6bd4792c72dc29556d05d786df723d1bd77bb55a4412752e7f646322",
+      "source_kind": "recursive_file_set",
+      "tree_sha256": "ad54886c23ced6744dbf7dd9397e9bf1441a24172d3384785945134cf50dd400"
+    }
+  }
+}

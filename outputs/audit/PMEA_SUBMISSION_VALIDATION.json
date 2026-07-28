@@ -1,0 +1,103 @@
+{
+  "validator_version": "1.0.0",
+  "generated_at_utc": "2026-07-28T07:18:03.917834+00:00",
+  "target_journal": "Physiological Measurement",
+  "scientific_and_format_pass": true,
+  "submission_ready": false,
+  "status": "READY_EXCEPT_AUTHOR_AND_RELEASE_INPUTS",
+  "main": {
+    "path": "manuscript/PMEA_complete_document_draft.docx",
+    "checks": {
+      "target_title_present": true,
+      "author_names_present": true,
+      "author_affiliations_present": true,
+      "corresponding_author_contact_present": true,
+      "funding_statement_finalized": true,
+      "competing_interest_statement_finalized": true,
+      "legacy_target_journal_absent": true,
+      "abstract_at_most_250_words": true,
+      "structured_abstract_complete": true,
+      "main_text_at_most_8000_words": true,
+      "harvard_citations_no_raw_keys": true,
+      "harvard_citations_no_numeric_brackets": true,
+      "references_alphabetized": true,
+      "references_include_titles": true,
+      "four_embedded_figures": true,
+      "four_figure_captions": true,
+      "all_figures_have_alt_text": true,
+      "figure_first_citations_are_ordered": true,
+      "figure_captions_are_ordered": true,
+      "ai_disclosure_appears_once": true,
+      "internal_ai_reminder_absent": true,
+      "percentage_range_typography_correct": true,
+      "main_table_present": true,
+      "structured_section_headings_present": true
+    },
+    "pass": true,
+    "abstract_words": 244,
+    "main_text_words": 7017,
+    "structured_abstract_labels": {
+      "Objective.": true,
+      "Approach.": true,
+      "Main results.": true,
+      "Significance.": true
+    },
+    "reference_count": 35,
+    "figure_count": 4,
+    "figure_caption_count": 4,
+    "figure_alt_text_count": 4,
+    "table_count": 1,
+    "author_release_placeholders": [
+      "[Additional acknowledgements to be supplied.]",
+      "[Author-specific CRediT roles to be supplied and confirmed by both authors.]",
+      "[institutional ethics determination to be supplied]",
+      "[repository and persistent release DOI to be supplied before submission]"
+    ]
+  },
+  "supplement": {
+    "path": "manuscript/PMEA_supplementary_material.docx",
+    "checks": {
+      "target_title_present": true,
+      "author_names_present": true,
+      "target_journal_correct": true,
+      "recorded_gender_outcome_section_omitted": true,
+      "supplementary_major_tables_are_contiguous": true,
+      "recorded_gender_figure_panel_omitted": true,
+      "joint_outcomes_obey_30_user_threshold": true,
+      "one_embedded_supplementary_figure": true,
+      "supplementary_figure_has_alt_text": true,
+      "threshold_disclosure_present": true
+    },
+    "pass": true,
+    "figure_count": 1,
+    "figure_alt_text_count": 1,
+    "table_count": 30,
+    "major_table_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "low_support_joint_rows": []
+  },
+  "author_and_release_blockers": [
+    "[Additional acknowledgements to be supplied.]",
+    "[Author-specific CRediT roles to be supplied and confirmed by both authors.]",
+    "[institutional ethics determination to be supplied]",
+    "[repository and persistent release DOI to be supplied before submission]"
+  ]
+}

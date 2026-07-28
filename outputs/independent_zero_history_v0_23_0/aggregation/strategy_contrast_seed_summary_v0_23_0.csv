@@ -1,0 +1,22 @@
+protocol,evaluation,horizon_seconds,contrast,definition,n_matched_seeds,difference_median_bpm,difference_minimum_bpm,difference_maximum_bpm,seed_inferential_test,seed_confidence_interval
+strict_temporal,internal_test,60,mixed_history_minus_independent_zero,mixed history-informed minus independently trained zero-history,5,-0.0499194632977792,-0.05637484756065951,-0.017960112901185037,False,False
+strict_temporal,internal_test,60,mixed_history_minus_mixed_zero,mixed history-informed minus mixed forced-zero-history,5,-0.04848177661539265,-0.05834866283182787,-0.04067455781230617,False,False
+strict_temporal,internal_test,60,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,0.003153688114980855,-0.011748245971806364,0.030521663714207618,False,False
+strict_temporal,internal_test,180,mixed_history_minus_independent_zero,mixed history-informed minus independently trained zero-history,5,-0.05612429430554044,-0.08392485128457526,-0.049677823125117,False,False
+strict_temporal,internal_test,180,mixed_history_minus_mixed_zero,mixed history-informed minus mixed forced-zero-history,5,-0.09008772493983049,-0.10816170759642879,-0.08787179126772209,False,False
+strict_temporal,internal_test,180,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,0.03531018519062687,0.018407283668036508,0.03819396814260509,False,False
+strict_temporal,internal_test,300,mixed_history_minus_independent_zero,mixed history-informed minus independently trained zero-history,5,-0.07570482249257429,-0.09281446550675157,-0.06205994523154944,False,False
+strict_temporal,internal_test,300,mixed_history_minus_mixed_zero,mixed history-informed minus mixed forced-zero-history,5,-0.11142083687254639,-0.12069525768076876,-0.10348585780264911,False,False
+strict_temporal,internal_test,300,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,0.028667179718670093,0.021853049656448253,0.04936089164099697,False,False
+unseen_user,frozen_external,60,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,0.006848019816145082,-0.04180014962623756,0.0183716815598647,False,False
+unseen_user,frozen_external,180,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,-0.010259654615351943,-0.03787916650744585,0.0057289131527977705,False,False
+unseen_user,frozen_external,300,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,-0.03494754755101784,-0.04787741250903507,0.01087904763225568,False,False
+unseen_user,internal_test,60,mixed_history_minus_independent_zero,mixed history-informed minus independently trained zero-history,5,-0.03158987601141089,-0.05708737146271742,0.0033420382373101844,False,False
+unseen_user,internal_test,60,mixed_history_minus_mixed_zero,mixed history-informed minus mixed forced-zero-history,5,-0.04069265144879391,-0.04439667441461929,-0.03359992971390599,False,False
+unseen_user,internal_test,60,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,0.004781449020716353,-0.012690697048098136,0.046578317860559125,False,False
+unseen_user,internal_test,180,mixed_history_minus_independent_zero,mixed history-informed minus independently trained zero-history,5,-0.07046835062587527,-0.09976610531934156,-0.0659733603494563,False,False
+unseen_user,internal_test,180,mixed_history_minus_mixed_zero,mixed history-informed minus mixed forced-zero-history,5,-0.08752001030080438,-0.09371277892746092,-0.08109638873635577,False,False
+unseen_user,internal_test,180,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,0.01952350860077509,-0.018669716582985774,0.023244428301585664,False,False
+unseen_user,internal_test,300,mixed_history_minus_independent_zero,mixed history-informed minus independently trained zero-history,5,-0.10644863735419087,-0.13862332678741143,-0.08745056845449506,False,False
+unseen_user,internal_test,300,mixed_history_minus_mixed_zero,mixed history-informed minus mixed forced-zero-history,5,-0.12432641507907807,-0.14679742619565106,-0.11865321408640964,False,False
+unseen_user,internal_test,300,mixed_zero_minus_independent_zero,mixed forced-zero-history minus independently trained zero-history,5,0.0186875659714038,-0.01455597717846053,0.03687584662458302,False,False
