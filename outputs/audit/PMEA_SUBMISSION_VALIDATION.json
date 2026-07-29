@@ -1,6 +1,6 @@
 {
   "validator_version": "1.0.0",
-  "generated_at_utc": "2026-07-29T08:06:41.002404+00:00",
+  "generated_at_utc": "2026-07-29T09:55:30.359190+00:00",
   "target_journal": "Physiological Measurement",
   "scientific_and_format_pass": true,
   "submission_ready": true,
@@ -35,7 +35,7 @@
     },
     "pass": true,
     "abstract_words": 244,
-    "main_text_words": 7100,
+    "main_text_words": 7108,
     "structured_abstract_labels": {
       "Objective.": true,
       "Approach.": true,

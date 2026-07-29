@@ -1,11 +1,11 @@
 {
   "manifest_version": "0.1.0",
-  "generated_at_utc": "2026-07-28T14:52:08.020479+00:00",
+  "generated_at_utc": "2026-07-29T10:29:27.869563+00:00",
   "status": "PASS",
   "manifest_file": "release/PUBLIC_RELEASE_INTEGRITY_v0_1_0.csv",
-  "manifest_sha256": "62a2f17b01525346d53a99d7a6d502d263427f58a9e55a04081eaa010ff44ed4",
+  "manifest_sha256": "fcca42c3c6626dcaff63303f67a84e62d2f392e1b39e8691242308fd37687325",
   "file_count": 256,
-  "total_size_bytes": 8782653,
+  "total_size_bytes": 8784167,
   "category_counts": {
     "release_metadata": 10,
     "configuration": 1,

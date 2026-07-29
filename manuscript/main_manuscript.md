@@ -236,7 +236,7 @@ The authors declare no competing interests.
 
 ## Acknowledgements
 
-The authors thank the contributors and maintainers of the Endomondo HR and GoldenCheetah OpenData resources. During manuscript preparation, the authors used the OpenAI Codex desktop application (model gpt-5.6-sol; OpenAI; accessed July 2026) solely for English-language polishing and Chinese–English translation of author-written text. It was not used to design the study, generate the research code, analyse data, generate or alter results or images, or compile the reference list. The research code was developed by the authors with additional paid human technical assistance and was verified by the authors. All AI-assisted text was reviewed and approved by the authors, who take full responsibility for the final work.
+The authors thank the contributors and maintainers of the Endomondo HR and GoldenCheetah OpenData resources. During research computing and manuscript preparation, the authors used the OpenAI Codex desktop application (model gpt-5.6-sol; OpenAI; accessed July 2026). The tool assisted with code drafting and with author-directed code review, command execution, audit-document preparation, code-development planning, literature organization, and language editing. It was not used autonomously to determine the study design or make scientific decisions, and it did not generate or alter participant measurements or scientific images. All code, analyses, citations, figures, and AI-assisted text were independently reviewed and verified by the authors. The authors take full responsibility for the accuracy, integrity, and originality of the final work.
 
 ## Figure captions
 

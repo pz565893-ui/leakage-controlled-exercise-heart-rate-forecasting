@@ -45,8 +45,8 @@
 - [x] Funding statement finalized as no specific grant.
 - [x] Conflict-of-interest statement finalized as no competing interests.
 - [x] Acknowledgements finalized; the outstanding placeholder was removed.
-- [x] Generative-AI disclosure finalized as OpenAI Codex desktop, model `gpt-5.6-sol`, used only for English-language polishing and Chinese–English translation.
-- [x] Both authors accept responsibility for the manuscript and submission; research code was developed by the authors with additional paid human technical assistance and was verified by the authors.
+- [x] Generative-AI disclosure finalized as OpenAI Codex desktop, model `gpt-5.6-sol`, used for code drafting and for author-directed code review, command execution, audit-document preparation, code-development planning, literature organization, and language editing.
+- [x] All code, analyses, citations, figures, and AI-assisted text were independently reviewed and verified by the authors, who accept full responsibility for the final work.
 
 ## Data and reproducibility blockers
 
