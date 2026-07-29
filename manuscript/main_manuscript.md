@@ -168,7 +168,7 @@ Recorded-gender metadata did not support the journal's minimum group size for a 
 
 ### 4.1. Principal findings
 
-This study provides three main findings. First, supplying completed prior-workout summaries yielded only 0.03--0.11-bpm user-level improvements relative to zero-history-trained models; the 95% user-bootstrap confidence interval for the 1-min unseen-user MAE difference included zero. Second, heterogeneity across sport families and the natural source mix was much larger. At 5 min, history gains were 0.079--0.112 bpm, the held-sport MAE range spanned 4.395 bpm, and the five-seed natural-mix cross-source gap was 2.911 bpm. In the reference seed, the corresponding natural-mix gap was 2.963 bpm and equal-family standardization yielded 0.968 bpm, with a confidence interval crossing zero. These descriptive magnitudes are not interchangeable causal effects, but they show which evaluation boundaries most changed the conclusion. Third, matched-information empirical intervals that were near nominal within Endomondo under-covered on GoldenCheetah despite being wider. The central result is therefore boundary-specific reliability, not a uniformly superior architecture.
+This study provides three main findings. First, supplying completed prior-workout summaries yielded only 0.03–0.11-bpm user-level improvements relative to zero-history-trained models; the 95% user-bootstrap confidence interval for the 1-min unseen-user MAE difference included zero. Second, heterogeneity across sport families and the natural source mix was much larger. At 5 min, history gains were 0.079–0.112 bpm, the held-sport MAE range spanned 4.395 bpm, and the five-seed natural-mix cross-source gap was 2.911 bpm. In the reference seed, the corresponding natural-mix gap was 2.963 bpm and equal-family standardization yielded 0.968 bpm, with a confidence interval crossing zero. These descriptive magnitudes are not interchangeable causal effects, but they show which evaluation boundaries most changed the conclusion. Third, matched-information empirical intervals that were near nominal within Endomondo under-covered on GoldenCheetah despite being wider. The central result is therefore boundary-specific reliability, not a uniformly superior architecture.
 
 ### 4.2. Personalization should be defined by information available at deployment
 
@@ -212,19 +212,19 @@ A past-only history-capable quantile forecaster showed small 1--5-min recorded-H
 
 ## Data availability
 
-Endomondo HR is available from the original UC San Diego FitRec release [@endomondo2019], which requests citation of the associated study [@ni2019] and limits the data to academic use, without redistribution or commercial use. GoldenCheetah OpenData is available from the Open Science Framework at https://osf.io/6hfpz/ (DOI 10.17605/OSF.IO/6HFPZ) [@goldencheetah2018]. This project will not redistribute raw source records. Sport-ontology rules, split definitions, aggregate source data for figures, and non-identifying audit summaries will be deposited with the analysis code at [repository and persistent release DOI to be supplied before submission]; the full raw-label ontology is excluded because public workout labels can contain linkable free text.
+Endomondo HR is available from the original UC San Diego FitRec release [@endomondo2019], which requests citation of the associated study [@ni2019] and limits the data to academic use, without redistribution or commercial use. GoldenCheetah OpenData is available from the Open Science Framework at https://osf.io/6hfpz/ (DOI 10.17605/OSF.IO/6HFPZ) [@goldencheetah2018]. This project does not redistribute raw source records. Sport-ontology rules, split definitions, aggregate source data for figures, and non-identifying audit summaries are available with the analysis code from GitHub (https://github.com/pz565893-ui/leakage-controlled-exercise-heart-rate-forecasting) and are archived in Zenodo as version 0.30.0 (https://doi.org/10.5281/zenodo.21649896); the full raw-label ontology is excluded because public workout labels can contain linkable free text.
 
 ## Code availability
 
-The analysis pipeline contains executable scripts for data-quality screening, duplicate control, sport-ontology regeneration, split construction, past-only origin indexing, history construction, model training, conformal calibration, statistical comparison, and figure generation. A versioned public repository and archived release will be supplied before submission. Raw-data paths, platform-specific identifiers, linkable free-text workout labels, row-level predictions, and model checkpoints will be excluded by default.
+The analysis code, configurations, aggregate non-identifying results, figure source data, and validation utilities are available from GitHub (https://github.com/pz565893-ui/leakage-controlled-exercise-heart-rate-forecasting) and archived in Zenodo as version 0.30.0 (https://doi.org/10.5281/zenodo.21649896). The release includes executable scripts for data-quality screening, duplicate control, sport-ontology regeneration, split construction, past-only origin indexing, history construction, model training, conformal calibration, statistical comparison, and figure generation. Raw Endomondo and GoldenCheetah records, platform-specific identifiers, linkable free-text workout labels, row-level predictions, and model checkpoints are not redistributed.
 
 ## Ethics statement
 
-The study used publicly released, pseudonymized secondary exercise records and involved no direct participant contact. The analysis did not attempt re-identification, and raw source records will not be redistributed. The authors must insert the applicable institutional review, exemption, or no-review-required determination before submission, including the deciding institution, basis, date, and reference number where applicable: [institutional ethics determination to be supplied].
+Formal ethics review was not sought because this study involved only secondary analysis of pre-existing, publicly available, pseudonymized datasets and involved no participant recruitment, intervention, interaction, or access to directly identifying information. The authors did not attempt to re-identify individuals and did not redistribute raw individual-level records. The study was conducted in accordance with the applicable terms of use of the Endomondo HR/FitRec and GoldenCheetah OpenData datasets.
 
 ## CRediT authorship contribution statement
 
-[Author-specific CRediT roles to be supplied and confirmed by both authors.]
+PANG KEREN: Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Resources, Data curation, Visualization, Project administration, Writing - original draft, Writing - review & editing. MIN CHANGRONG: Software (code review), Validation, Writing - review & editing.
 
 ## Funding
 
@@ -236,7 +236,7 @@ The authors declare no competing interests.
 
 ## Acknowledgements
 
-The authors thank the contributors and maintainers of the Endomondo HR and GoldenCheetah OpenData resources. During research computing and manuscript preparation, the authors used the OpenAI Codex desktop application (GPT-5-based model; OpenAI; accessed July 2026) for code drafting and review, author-directed command execution, audit documentation, plotting-code development, literature organization, and language editing. It was not used as a forecasting model and did not create or alter participant measurements or images. All outputs were reviewed and verified by the authors, who take responsibility for the final work. [Additional acknowledgements to be supplied.]
+The authors thank the contributors and maintainers of the Endomondo HR and GoldenCheetah OpenData resources. During manuscript preparation, the authors used the OpenAI Codex desktop application (model gpt-5.6-sol; OpenAI; accessed July 2026) solely for English-language polishing and Chinese–English translation of author-written text. It was not used to design the study, generate the research code, analyse data, generate or alter results or images, or compile the reference list. The research code was developed by the authors with additional paid human technical assistance and was verified by the authors. All AI-assisted text was reviewed and approved by the authors, who take full responsibility for the final work.
 
 ## Figure captions
 

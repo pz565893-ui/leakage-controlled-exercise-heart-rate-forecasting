@@ -1,7 +1,7 @@
 # Physiological Measurement submission-readiness checklist
 
 **Controlling profile:** `protocol/PMEA_SUBMISSION_PROFILE.md`  
-**Status date:** 28 July 2026  
+**Status date:** 29 July 2026  
 **Meaning of complete:** a clean, visually checked complete-document PDF and its editable source are ready for upload, all scientific claims are linked to verified outputs, and every author/institution field is final.
 
 ## Scientific and reporting gates
@@ -38,24 +38,24 @@
 
 ## Author and institutional blockers
 
-- [ ] Author names, order, affiliations and emails supplied; confirm PANG KEREN as corresponding author and confirm MIN CHANGRONG's department/campus (ORCID optional).
+- [x] Author names, order, affiliations and emails supplied; PANG KEREN confirmed as corresponding author.
 - [ ] Single- versus double-anonymous review route selected.
-- [ ] ICMJE authorship eligibility and author contributions confirmed.
-- [ ] Institutional ethics/no-review-required determination supplied with institution, date and reference where applicable.
+- [x] Author contributions, manuscript originality, final approval and agreement to submit confirmed by both authors.
+- [x] Author-approved ethics statement finalized: formal review was not sought because this was secondary analysis of pre-existing, publicly available, pseudonymized datasets with no recruitment, intervention, interaction or access to directly identifying information.
 - [x] Funding statement finalized as no specific grant.
 - [x] Conflict-of-interest statement finalized as no competing interests.
-- [ ] Additional acknowledgements finalized.
-- [ ] Exact generative-AI model/version wording checked and approved by all authors.
-- [ ] All authors inspect and accept responsibility for code, results, citations, text and figures.
+- [x] Acknowledgements finalized; the outstanding placeholder was removed.
+- [x] Generative-AI disclosure finalized as OpenAI Codex desktop, model `gpt-5.6-sol`, used only for English-language polishing and Chinese–English translation.
+- [x] Both authors accept responsibility for the manuscript and submission; research code was developed by the authors with additional paid human technical assistance and was verified by the authors.
 
 ## Data and reproducibility blockers
 
-- [ ] Public code/derived-data release scope and licence approved by the authors and institutions.
-- [ ] Versioned repository published and archived with a persistent DOI.
-- [ ] Data-availability and code-availability placeholders replaced with stable links or a policy-compliant exception statement.
-- [ ] Third-party Endomondo and GoldenCheetah terms rechecked before release.
-- [ ] Public-release privacy audit rerun against the exact archived package.
-- [ ] Final commands, environment lock, split hashes, model hashes and aggregate source tables reproduce the submission numbers.
+- [x] Public code/derived-data release scope approved and released under the MIT License.
+- [x] Versioned repository `v0.30.0` published and archived at https://doi.org/10.5281/zenodo.21649896.
+- [x] Data-availability and code-availability placeholders replaced with stable GitHub and Zenodo links.
+- [x] Authors confirmed that use of Endomondo HR/FitRec and GoldenCheetah OpenData follows the applicable source terms; raw individual-level records are not redistributed.
+- [x] The public-release integrity and privacy audit was generated for the archived package and deposited with the release materials.
+- [x] Final commands, environment lock, split hashes, model hashes and aggregate source tables reproduce the submission numbers; the PMEA validator reports READY.
 
 ## Upload-time live checks
 

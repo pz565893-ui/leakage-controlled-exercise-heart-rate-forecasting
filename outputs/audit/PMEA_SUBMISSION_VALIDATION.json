@@ -1,10 +1,10 @@
 {
   "validator_version": "1.0.0",
-  "generated_at_utc": "2026-07-28T07:18:03.917834+00:00",
+  "generated_at_utc": "2026-07-29T08:06:41.002404+00:00",
   "target_journal": "Physiological Measurement",
   "scientific_and_format_pass": true,
-  "submission_ready": false,
-  "status": "READY_EXCEPT_AUTHOR_AND_RELEASE_INPUTS",
+  "submission_ready": true,
+  "status": "READY",
   "main": {
     "path": "manuscript/PMEA_complete_document_draft.docx",
     "checks": {
@@ -35,7 +35,7 @@
     },
     "pass": true,
     "abstract_words": 244,
-    "main_text_words": 7017,
+    "main_text_words": 7100,
     "structured_abstract_labels": {
       "Objective.": true,
       "Approach.": true,
@@ -47,12 +47,7 @@
     "figure_caption_count": 4,
     "figure_alt_text_count": 4,
     "table_count": 1,
-    "author_release_placeholders": [
-      "[Additional acknowledgements to be supplied.]",
-      "[Author-specific CRediT roles to be supplied and confirmed by both authors.]",
-      "[institutional ethics determination to be supplied]",
-      "[repository and persistent release DOI to be supplied before submission]"
-    ]
+    "author_release_placeholders": []
   },
   "supplement": {
     "path": "manuscript/PMEA_supplementary_material.docx",
@@ -94,10 +89,5 @@
     ],
     "low_support_joint_rows": []
   },
-  "author_and_release_blockers": [
-    "[Additional acknowledgements to be supplied.]",
-    "[Author-specific CRediT roles to be supplied and confirmed by both authors.]",
-    "[institutional ethics determination to be supplied]",
-    "[repository and persistent release DOI to be supplied before submission]"
-  ]
+  "author_blockers": []
 }

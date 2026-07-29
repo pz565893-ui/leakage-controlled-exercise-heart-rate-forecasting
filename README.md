@@ -1,5 +1,7 @@
 # Leakage-Controlled Exercise Heart-Rate Forecasting
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21649896.svg)](https://doi.org/10.5281/zenodo.21649896)
+
 This directory contains the reproducible study and manuscript workspace for:
 
 > **Boundary-dependent reliability of exercise heart-rate forecasts across users, sports, and data sources: a leakage-controlled study**
@@ -21,13 +23,17 @@ Chinese working title:
 - At the 28 July 2026 high-impact pre-submission build, the English main text contains 7,017 words, the structured abstract contains 244 words, and the PMEA-facing supplement contains 30 rendered tables under the continuous major sequence S1--S18. The cover letter, four main figures, one supplementary figure, and source-data tables are prepared.
 - Editable Word-build pipelines exist for the PMEA main manuscript and supplementary material. Figure 3 now presents sport-family distribution shifts and Figure 4 presents uncertainty calibration, matching their first-citation order. The v0.30.0 documents retain one concise AI-use disclosure in Acknowledgements, use correct range typography, and omit the internal author reminder.
 - The release policy now excludes the full raw-label ontology because GoldenCheetah workout labels can contain linkable free text; it also blocks reported user groups below 10, the internal graphical abstract, row-level files, and checkpoints. The non-identifying raw-source integrity audit remains reproducible and is included.
-- A deterministic privacy-conservative repository builder creates `release/code_repository_upload_v0_30_0.zip` from a SHA-256 allowlist. Raw Endomondo/GoldenCheetah records, row-level predictions, identifiers, local paths, checkpoints, and TIFF masters are excluded. The deposited software and associated documentation are released under the MIT License; no third-party raw data are relicensed. Author names, affiliations, contact emails, PANG KEREN's ORCID, the no-specific-funding statement, and the no-competing-interests declaration are integrated. Remaining submission blockers are the institutional ethics determination, author-specific CRediT roles, any additional acknowledgements, and a persistent release DOI.
+- A deterministic privacy-conservative repository builder creates `release/code_repository_upload_v0_30_0.zip` from a SHA-256 allowlist. Raw Endomondo/GoldenCheetah records, row-level predictions, identifiers, local paths, checkpoints, and TIFF masters are excluded. The deposited software and associated documentation are released under the MIT License; no third-party raw data are relicensed. Version `v0.30.0` is archived in Zenodo at <https://doi.org/10.5281/zenodo.21649896>. Author names, affiliations, contact emails, PANG KEREN's ORCID, the author-approved secondary-data ethics statement, CRediT roles, no-specific-funding statement, no-competing-interests declaration, acknowledgements, and author approval/originality declaration are finalized. The repository and exact-version Zenodo DOI are public; the intentionally excluded third-party raw records remain available only from their original providers under their applicable terms.
 
-## Author handoff
+## Citation
 
-- Complete the Chinese one-time form: `manuscript/AUTHOR_INPUT_FORM_CN.md`.
+Pang K and Min C 2026 *Leakage-Controlled Exercise Heart-Rate Forecasting*, version 0.30.0, Zenodo. <https://doi.org/10.5281/zenodo.21649896>
+
+## Submission handoff
+
+- The author declarations recorded in `manuscript/AUTHOR_INPUT_FORM_CN.md` are complete for the present submission package.
 - Follow the target-journal profile: `protocol/PMEA_SUBMISSION_PROFILE.md`.
-- Track all remaining gates: `protocol/PMEA_SUBMISSION_READINESS_CHECKLIST.md`.
+- Track only live submission-system checks and the remaining peer-review identity choice in `protocol/PMEA_SUBMISSION_READINESS_CHECKLIST.md`.
 
 ## Evidence-first workflow
 

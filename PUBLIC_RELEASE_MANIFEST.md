@@ -1,7 +1,7 @@
 # Public release manifest policy
 
 **Policy version:** 0.1.0  
-**Status:** pre-release specification; MIT software licence selected, persistent DOI pending
+**Status:** released under the MIT License; version 0.30.0 archived at https://doi.org/10.5281/zenodo.21649896
 
 This document defines the default public-release boundary for the *Physiological Measurement* submission package. It is intentionally conservative: release files are selected through an explicit allowlist, while raw and row-level artifacts are excluded even if they are present in the working directory.
 
@@ -49,7 +49,7 @@ The following are excluded from the default public release:
 
 - raw Endomondo or GoldenCheetah records and any copied raw-data directory;
 - `outputs/manifests/`, `outputs/origins/`, `outputs/features/`, and `outputs/predictions/`;
-- model checkpoints and normalization/calibration files under `outputs/models/` pending an author/institutional release decision;
+- model checkpoints and normalization/calibration files under `outputs/models/`, which are intentionally excluded from the public release because they are not required to reproduce the deposited aggregate evidence and may retain training-derived artefacts;
 - `configs/sport_ontology_v0_2_0.csv`, because GoldenCheetah raw labels include linkable free-text workout titles, routes, dates, or places;
 - row-level audit databases or CSVs containing source keys, user IDs, session/activity IDs, exact times, paths, offsets, gender records, or coordinates;
 - the v0.24/v0.25 process-audit JSON files, because these retained execution records can include author-machine paths; their identifier-free aggregate CSVs remain allowlisted;
@@ -65,16 +65,16 @@ The following are excluded from the default public release:
 
 Stable public-platform IDs remain linkable pseudonyms. They are treated as non-release fields even when names are absent.
 
-## Author decisions required before a public DOI is minted
+## Resolved release decisions
 
 The following fields are deliberately unresolved and must not be inferred by the code:
 
 1. **Software licence:** resolved as MIT for the deposited software and associated documentation.
-2. **Repository URL:** `https://github.com/pz565893-ui/leakage-controlled-exercise-heart-rate-forecasting`; archived DOI remains pending.
+2. **Repository and archive:** `https://github.com/pz565893-ui/leakage-controlled-exercise-heart-rate-forecasting`; version 0.30.0 archived at `https://doi.org/10.5281/zenodo.21649896`.
 3. **Checkpoint release:** excluded from the default public repository and not required for this release.
 4. **Third-party data terms:** FitRec/Endomondo is limited by its source page to academic, non-commercial use without redistribution. GoldenCheetah is currently labelled CC0 by OSF, but its raw records are still not mirrored under this privacy-conservative project policy. Neither source is relicensed by this project.
 
-After these decisions, regenerate and verify the integrity manifest from the exact tagged commit, then rebuild the upload bundle with `python src/build_public_repository_package.py`. The repository landing page should record creators, title, version, publication year, resource type, description, licence/rights, related dataset identifiers, and the related manuscript identifier when available.
+The released tag was generated and verified from the privacy-conservative integrity manifest before archiving. Post-release DOI metadata updates must be regenerated and verified on the repository default branch without moving the archived `v0.30.0` tag. The repository landing page should record creators, title, version, publication year, resource type, description, licence/rights, related dataset identifiers, and the related manuscript identifier when available.
 
 ## Release gate
 
